@@ -1,128 +1,236 @@
-# ✨ Locket Pro Automation 🤖
+import React, { useState, useEffect, useRef } from 'react';
 
-### Tối Ưu Hóa Tác Vụ Locketbinhake, Đơn Giản & Thông Minh
+// Declare marked and lucide to be available globally from the CDN script
+declare global {
+  interface Window {
+    marked: {
+      parse: (markdown: string) => string;
+    };
+    lucide: {
+      createIcons: () => void;
+    };
+  }
+}
 
-<br>
-
-<p align="center">
-  <a href="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/tampermonkey.user.js">
-    <img src="https://img.shields.io/badge/TRI%E1%BB%82N%20KHAI%20USERSCRIPT-ONE%20CLICK%20INSTALL-007bff?style=for-the-badge&logo=tampermonkey&logoColor=white" alt="Install Userscript Now" />
-  </a>
+const readmeContent = `
+<h2 id="introduction" class="scroll-mt-24">🚀 Kỷ Nguyên Mới Của Tự Động Hóa</h2>
+<p class="text-lg text-gray-300 mt-4">
+  <strong>Locket Pro Automation</strong> không phải là một công cụ. Đây là <strong>trợ lý ảo</strong> của bạn, được thiết kế để giải phóng bạn khỏi những tác vụ lặp đi lặp lại nhàm chán. Hãy quên đi việc click chuột thủ công. Chào mừng bạn đến với hiệu suất tối đa.
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/v/release/Pinnnndz/locket-autocelebrity-v4?style=flat-square&label=Phi%C3%AAn%20b%E1%BA%A3n&color=red" alt="Version">
-  &nbsp;
-  <img src="https://img.shields.io/badge/Tr%E1%BA%A1ng%20th%C3%A1i-ONLILNE-success?style=flat-square&logo=power-automate&logoColor=white" alt="Status">
-  &nbsp;
-  <img src="https://img.shields.io/badge/Gi%E1%BA%A5y%20ph%C3%A9p-MIT-blue?style=flat-square" alt="License">
-</p>
+<div class="my-12 border-t border-purple-900/50"></div>
 
-<p align="center">
+<h2 id="features" class="scroll-mt-24">✨ Bộ Công Cụ Tính Năng</h2>
+<div class="grid md:grid-cols-2 gap-6 mt-6">
+  <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 backdrop-blur-sm">
+    <h3 class="font-semibold text-xl text-purple-400 mb-2">⚡️ Kích Hoạt Siêu Tốc</h3>
+    <p class="text-gray-400">Một cú nhấp chuột duy nhất để khởi động toàn bộ chuỗi tác vụ. Tiết kiệm thời gian, tối ưu hóa năng suất.</p>
+  </div>
+  <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 backdrop-blur-sm">
+    <h3 class="font-semibold text-xl text-purple-400 mb-2">🛡️ Pháo Đài Bảo Mật</h3>
+    <p class="text-gray-400">Hoạt động trong môi trường Tampermonkey, không yêu cầu mật khẩu hay truy cập dữ liệu cá nhân. An toàn tuyệt đối.</p>
+  </div>
+  <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 backdrop-blur-sm">
+    <h3 class="font-semibold text-xl text-purple-400 mb-2">🎨 Giao Diện Trực Quan</h3>
+    <p class="text-gray-400">Bảng điều khiển tinh gọn, tự động ghim vào góc màn hình, giúp bạn dễ dàng kiểm soát mà không làm gián đoạn công việc.</p>
+  </div>
+  <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 backdrop-blur-sm">
+    <h3 class="font-semibold text-xl text-purple-400 mb-2">🌐 Tương Thích Đa Nền Tảng</h3>
+    <p class="text-gray-400">Hoạt động mượt mà trên PC (Chrome, Edge, Firefox) và Mobile (Kiwi Browser). Trải nghiệm đồng nhất.</p>
+  </div>
+</div>
+
+<div class="my-12 border-t border-purple-900/50"></div>
+
+<h2 id="installation" class="scroll-mt-24">🛠️ Quy Trình Triển Khai: 3 Bước Đơn Giản</h2>
+<ol class="relative border-l border-gray-700 space-y-10 ml-4 mt-6">
+    <li class="ml-8">
+        <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-900 rounded-full -left-4 ring-4 ring-gray-900/50 text-purple-300 font-bold">1</span>
+        <h3 class="font-semibold text-xl text-white">Cài Đặt Tampermonkey</h3>
+        <p class="text-gray-400">Nền tảng "bệ phóng" không thể thiếu. Nếu đã có, bỏ qua bước này.</p>
+        <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-purple-400 hover:text-purple-300 mt-2">Tải về cho trình duyệt <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+    </li>
+    <li class="ml-8">
+        <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-900 rounded-full -left-4 ring-4 ring-gray-900/50 text-purple-300 font-bold">2</span>
+        <h3 class="font-semibold text-xl text-white">Cài Đặt Locket Pro Script</h3>
+        <p class="text-gray-400">Click vào nút bên dưới và nhấn "Install".</p>
+        <a href="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/tampermonkey.user.js" class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-transform transform hover:scale-105">Cài Đặt Script</a>
+    </li>
+    <li class="ml-8">
+        <span class="absolute flex items-center justify-center w-8 h-8 bg-purple-900 rounded-full -left-4 ring-4 ring-gray-900/50 text-purple-300 font-bold">3</span>
+        <h3 class="font-semibold text-xl text-white">Khởi Động & Tận Hưởng</h3>
+        <p class="text-gray-400">Truy cập <a href="https://locket.binhake.dev/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:underline">Locketbinhake</a>, bảng điều khiển sẽ tự động xuất hiện. Nhấn "Bắt đầu" và xem phép màu xảy ra.</p>
+    </li>
+</ol>
+
+<div class="my-12 border-t border-purple-900/50"></div>
+
+<h2 id="faq" class="scroll-mt-24">🚨 Gặp Sự Cố?</h2>
+<div class="space-y-4 mt-6">
+    <details class="group bg-gray-800/50 border border-gray-700 rounded-lg p-4 backdrop-blur-sm">
+        <summary class="flex items-center justify-between cursor-pointer font-semibold text-white">
+            Bảng điều khiển không xuất hiện
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+        </summary>
+        <div class="mt-4 text-gray-400 prose prose-invert prose-a:text-purple-400">
+            <p><strong>Chẩn đoán:</strong> 99% do Tampermonkey chưa được cấp quyền hoạt động đầy đủ.</p>
+            <p><strong>Giải pháp:</strong> Vào <code>chrome://extensions</code>, tìm Tampermonkey và đảm bảo các quyền cần thiết đã được <strong>BẬT</strong>, sau đó tải lại trang (F5).</p>
+        </div>
+    </details>
+    <details class="group bg-gray-800/50 border border-gray-700 rounded-lg p-4 backdrop-blur-sm">
+        <summary class="flex items-center justify-between cursor-pointer font-semibold text-white">
+            Trang web bị treo hoặc dính Captcha
+            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"></i>
+        </summary>
+        <div class="mt-4 text-gray-400 prose prose-invert prose-a:text-purple-400">
+             <p><strong>Chẩn đoán:</strong> Website có thể chặn IP từ nước ngoài.</p>
+             <p><strong>Giải pháp:</strong> Sử dụng VPN và chuyển vùng về <strong>Việt Nam</strong>. Đề xuất: <a href="https://chromewebstore.google.com/detail/urban-vpn-proxy/eppiocemhmnlbhjplcgkofciiegomcon?hl=vi" target="_blank" rel="noopener noreferrer">Urban VPN</a>.</p>
+        </div>
+    </details>
+</div>
+
+<div class="my-12 border-t border-purple-900/50"></div>
+
+<h2 id="contribute" class="scroll-mt-24">🤝 Tham Gia & Đóng Góp</h2>
+<p class="text-gray-300 mt-4">
+    <strong>Locket Pro</strong> được xây dựng bởi cộng đồng. Mọi ý tưởng, báo cáo lỗi, và đóng góp đều là nguồn động lực vô giá. Gặp vấn đề? Hãy liên hệ trực tiếp qua Facebook.
+</p>
+<a href="https://www.facebook.com/hphuoc.2007" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 mt-4">
+    <i data-lucide="message-square"></i>
+    Liên Hệ Tác Giả
+</a>
+`;
+
+const headings = [
+  { id: 'introduction', title: 'Giới Thiệu' },
+  { id: 'features', title: 'Tính Năng' },
+  { id: 'installation', title: 'Cài Đặt' },
+  { id: 'faq', title: 'Hỏi Đáp' },
+  { id: 'contribute', title: 'Đóng Góp' },
+];
+
+const Hero = () => {
+    const [subtitle, setSubtitle] = useState('');
+    const fullSubtitle = "Giải pháp tự động hóa thế hệ mới cho Locketbinhake.";
+
+    useEffect(() => {
+        let i = 0;
+        const typingInterval = setInterval(() => {
+            if (i < fullSubtitle.length) {
+                setSubtitle(prev => prev + fullSubtitle.charAt(i));
+                i++;
+            } else {
+                clearInterval(typingInterval);
+            }
+        }, 50);
+        return () => clearInterval(typingInterval);
+    }, []);
+
+
+    return (
+        <div className="text-center py-20 px-4">
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                    Locket Pro Automation
+                </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto h-8">
+                {subtitle}
+                <span className="animate-ping">_</span>
+            </p>
+             <a href="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/tampermonkey.user.js" className="mt-10 inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg shadow-purple-500/40 text-lg">
+                Triển Khai Ngay
+             </a>
+        </div>
+    )
+}
+
+const App: React.FC = () => {
+  const [htmlContent, setHtmlContent] = useState('');
+  const [activeId, setActiveId] = useState(headings[0].id);
+  const observer = useRef<IntersectionObserver | null>(null);
+
+  useEffect(() => {
+    if (window.marked) {
+      // Use a timeout to ensure the DOM is ready for Lucide
+      setTimeout(() => {
+        setHtmlContent(window.marked.parse(readmeContent));
+      }, 0);
+    }
+  }, []);
   
-</p>
+  useEffect(() => {
+    if (htmlContent && window.lucide) {
+        window.lucide.createIcons();
+        
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
 
----
+        document.querySelectorAll('.fade-in-section > *').forEach(el => {
+            sectionObserver.observe(el as HTMLElement);
+        });
 
-> 🔥 **Locket Pro Automation** không chỉ là một Userscript. Đây là giải pháp tự động hóa thế hệ mới, giúp bạn tối đa hóa hiệu suất và loại bỏ mọi thao tác thủ công lặp đi lặp lại trên nền tảng **Locketbinhake**. Tự động thêm bảng điều khiển và kích hoạt tác vụ chỉ với một cú nhấp chuột.
+        return () => sectionObserver.disconnect();
+    }
+  }, [htmlContent]);
 
-## 🌟 Tại Sao Chọn Locket Pro? (Key Features)
+  useEffect(() => {
+    const handleObserver = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+        }
+      });
+    };
+    
+    observer.current = new IntersectionObserver(handleObserver, {
+        rootMargin: "-20% 0px -80% 0px"
+    });
 
-| Icon | Tính Năng | Mô Tả |
-| :---: | :--- | :--- |
-| 🚀 | **Auto 1-Click** | Kích hoạt toàn bộ quy trình tự động chỉ với một lần nhấn nút, tiết kiệm thời gian tối đa. |
-| 🛡️ | **Bảo Mật Cao** | Hoạt động độc lập qua Tampermonkey, đảm bảo tính minh bạch và không cần truy cập tài khoản. |
-| 🖥️ | **UX Tối Ưu** | Bảng điều khiển (Control Panel) tự động xuất hiện ở góc dưới bên phải màn hình. |
-| 📱 | **Cross-Platform** | Hỗ trợ liền mạch trên cả PC (Chrome/Edge/Firefox) và Mobile (Kiwi Browser, v.v.). |
+    const elements = document.querySelectorAll("h2[id]");
+    elements.forEach(elem => observer.current?.observe(elem));
 
----
-
-## ⚙️ Hướng Dẫn Kích Hoạt (3 Bước Cơ Bản)
-
-### 1️⃣ Chuẩn Bị Nền Tảng: Cài Tampermonkey
-
-Đây là nền tảng bắt buộc để chạy script.
-*Nếu đã cài đặt, chuyển sang Bước 2.*
-
-| Thiết Bị | Trình Duyệt | Link Cài Đặt Chính Thức |
-| :--- | :--- | :--- |
-| **PC/Laptop** | Chrome, Edge, Firefox | [Tải Tampermonkey (Bản Chính)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| **Mobile** | Kiwi Browser, v.v. | [Tải Tampermonkey (Bản Legacy)](https://chromewebstore.google.com/detail/tampermonkey-legacy/lcmhijbkigalmkeommnijlpobloojgfn) |
-
-### 2️⃣ Cài Đặt Script: Locket Pro
-
-Nhấp vào nút cài đặt ở trên hoặc nút bên dưới. Tampermonkey sẽ tự động mở tab cài đặt.
-
-<p align="center">
-  <a href="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/tampermonkey.user.js" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/C%C3%80I%20%C4%90%E1%BA%B6T%20USERSCRIPT-B%E1%BA%A4T%20%C4%90%E1%BA%A6U%20NGAY-8B0000?style=for-the-badge&logo=download&logoColor=white" alt="Install Script">
-  </a>
-</p>
-
-> 💡 **Mẹo:** Trong tab mới mở ra, bạn chỉ cần nhấn **"Install" (Cài đặt)** là xong.
-
-### 3️⃣ Khởi Động: Bấm Nút Auto
-
-1.  Truy cập trang [Locketbinhake](https://locket.binhake.dev/).
-2.  Bạn sẽ thấy một bảng điều khiển xuất hiện ở góc dưới bên phải màn hình.
-3.  Nhấn nút **"Bắt đầu Auto Celeb"** để script tự động làm việc.
-
----
-
-## 🚨 Xử Lý Sự Cố & FAQ
-
-<details>
-  <summary><strong>❓ Lỗi: Bảng điều khiển không hiển thị sau khi cài đặt.</strong></summary>
-
-  **Lý do:** Vấn đề này 99% là do bạn chưa cấp đủ quyền cho Tampermonkey.
-  
-  **Giải pháp nhanh:**
-  1.  Mở trang quản lý tiện ích của Chrome.
-  2.  Tìm Tampermonkey và đảm bảo 2 mục sau đã được **BẬT**:
-      * `Cho phép tập lệnh của người dùng` (Allow User Scripts)
-      * `Cho phép ở chế độ ẩn danh` (Allow in Incognito)
-  3.  Tải lại (F5) trang Locketbinhake.
-</details>
-
-<details>
-  <summary><strong>❓ Lỗi: Web bị treo hoặc dính Captcha khi dùng VPS nước ngoài.</strong></summary>
-
-  **Lý do:** Website có thể đang chặn hoặc hạn chế các địa chỉ IP không phải từ Việt Nam.
-
-  **Giải pháp:**
-  * Sử dụng một tiện ích VPN và chuyển vùng (location) về **Việt Nam**.
-  * **Gợi ý VPN:** [Urban VPN Proxy](https://chromewebstore.google.com/detail/urban-vpn-proxy/eppiocemhmnlbhjplcgkofciiegomcon?hl=vi).
-  * Sau khi cài VPN và bật IP Việt Nam, hãy F5 lại trang web.
-</details>
-
----
-
-## 💖 Cộng Đồng & Đóng Góp
-
-Mọi ý tưởng, đóng góp mã nguồn (code) hoặc báo cáo lỗi đều được hoan nghênh. Dự án phát triển nhờ cộng đồng!
-
-### Cách Đóng Góp (Contributing):
-
-Nếu các bạn đang sử dụng mà gặp lỗi gì đó
-Hãy chụp màn hình lại
-Sau đó liên hệ cho tớ
-Tớ sẽ tìm và khắc phục lỗi đó ngay
-
-### 📞 Hỗ Trợ
-
-Nếu gặp vấn đề không thể tự giải quyết, hãy liên hệ cho tớ sớm nhất có thể nhé
-
-<p align="center">
-  <a href="https://www.facebook.com/hphuoc.2007">
-    <img src="https://img.shields.io/badge/NH%E1%BA%ACN%20H%E1%BB%96%20TR%E1%BB%A2-FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Nhận Hỗ Trợ Facebook" />
-  </a>
-</p>
+    return () => observer.current?.disconnect();
+  }, [htmlContent]);
 
 
----
+  return (
+    <div className="min-h-screen bg-transparent font-sans p-4 sm:p-6 lg:p-8">
+        <Hero />
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <aside className="hidden lg:block lg:col-span-3 sticky top-24 self-start">
+                <nav className="space-y-2">
+                    <p className="font-bold text-gray-400 text-sm uppercase tracking-wider">Nội dung</p>
+                    {headings.map(heading => (
+                        <a 
+                            key={heading.id}
+                            href={`#${heading.id}`} 
+                            className={`block font-medium rounded-md transition-all duration-200 py-2 px-3 ${activeId === heading.id ? 'bg-purple-500/20 text-purple-300' : 'text-gray-400 hover:bg-gray-700/50 hover:text-white'}`}
+                        >
+                            {heading.title}
+                        </a>
+                    ))}
+                </nav>
+            </aside>
+            <main className="lg:col-span-9">
+                <div className="bg-gray-900/50 backdrop-blur-xl rounded-lg shadow-2xl overflow-hidden border border-gray-700/50">
+                    <article
+                        className="p-6 sm:p-10 text-gray-300 fade-in-section space-y-8"
+                        dangerouslySetInnerHTML={{ __html: htmlContent }}
+                    />
+                </div>
+            </main>
+        </div>
+        <footer className="text-center py-12 text-gray-500">
+            <p>Rendered with React, Tailwind CSS, and Framer Motion</p>
+        </footer>
+    </div>
+  );
+};
 
-## 📝 Giấy Phép (License)
-
-Dự án này được bảo vệ theo Giấy phép **MIT**. Chi tiết xem tại tệp [LICENSE](LICENSE).
-
----
+export default App;
