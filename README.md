@@ -36,7 +36,7 @@
 **Locket Pro Automation** là một cỗ máy được tinh chỉnh để biến đổi hoàn toàn cách bạn tương tác với Locketbinhake. Chúng tôi đã đóng gói trí tuệ tự động hóa vào một giao diện điều khiển liền mạch, cho phép bạn thực thi các chuỗi tác vụ phức tạp chỉ bằng **MỘT CÚ NHẤP CHUỘT**.
 
 <p align="center">
-  <img src="https://i.imgur.com/gY9kF7g.gif" alt="Locket Pro Automation Demo" width="90%">
+  <img src="https://sf-static.upanhlaylink.com/img/image_202511103a1f6397bb2a2b936d540144190da4f2.jpg" alt="Screenshot 2025-11-10 030025.png">
 </p>
 
 ---
