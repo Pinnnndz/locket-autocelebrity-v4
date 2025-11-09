@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/v8iL1fH.png" alt="Locket Pro Automation - The Ultimate Automation Engine"/>
+  <img src="https://sf-static.upanhlaylink.com/img/image_2025111074dbdebd9abd30a484944ba770a9ff39.jpg" alt="Screenshot 2025-11-10 030640.png">
 </p>
 
 <h1 align="center">
@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Pinnnndz/locket-autocelebrity-v4/releases"><img alt="Version" src="https://img.shields.io/github/v/release/Pinnnndz/locket-autocelebrity-v4?style=flat-square&label=Phiên%20bản&color=5865F2"></a>
+  <a href="https://github.com/Pinnnndz/locket-autocelebrity-v4/releases"><img alt="License" src="https://img.shields.io/badge/Version-4.4-blue?style=flat-square"></a>
   <img alt="Status" src="https://img.shields.io/badge/Trạng_thái-Online-43B581?style=flat-square">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/Giấy_phép-MIT-blue?style=flat-square"></a>
   <img alt="Platform" src="https://img.shields.io/badge/Nền_tảng-PC_&_Mobile-FEE75C?style=flat-square&logoColor=black">
