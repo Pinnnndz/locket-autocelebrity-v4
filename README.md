@@ -1,109 +1,121 @@
-# Locket Pro Automation 🤖
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/.github/header.png?raw=true" alt="Locket Pro Automation Banner"/>
+</p>
 
-**Trợ lý tự động hóa thông minh cho Locketbinhake, giúp bạn tiết kiệm thời gian và tối ưu hóa hiệu suất.**
+<h1 align="center">Locket Pro Automation 🤖</h1>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/tampermonkey.user.js">
-    <img src="https://img.shields.io/badge/Cài_đặt_Script-Click_để_cài_đặt-4CAF50?style=for-the-badge&logo=tampermonkey&logoColor=white" alt="Install Userscript" />
+  <strong>Giải pháp tự động hóa tối thượng cho Locketbinhake. Giải phóng thời gian, tối đa hóa hiệu suất.</strong>
+</p>
+
+<p align="center">
+    <a href="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/tampermonkey.user.js">
+    <img src="https://img.shields.io/badge/CÀI ĐẶT NGAY-ONE CLICK INSTALL-5865F2?style=for-the-badge&logo=tampermonkey&logoColor=white" alt="Install Userscript"/>
   </a>
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/github/v/release/Pinnnndz/locket-autocelebrity-v4?style=flat-square&label=Phiên%20bản&color=blueviolet">
-  <img alt="Status" src="https://img.shields.io/badge/Trạng_thái-Hoạt_động-brightgreen?style=flat-square">
+  <img alt="Version" src="https://img.shields.io/github/v/release/Pinnnndz/locket-autocelebrity-v4?style=flat-square&label=Phiên%20bản&color=5865F2">
+  <img alt="Status" src="https://img.shields.io/badge/Trạng_thái-Online-43B581?style=flat-square">
   <img alt="License" src="https://img.shields.io/badge/Giấy_phép-MIT-blue?style=flat-square">
-  <img alt="Platform" src="https://img.shields.io/badge/Nền_tảng-PC_&_Mobile-orange?style=flat-square">
+  <img alt="Platform" src="https://img.shields.io/badge/Nền_tảng-PC_&_Mobile-FEE75C?style=flat-square&logoColor=black">
 </p>
 
 ---
 
-**Locket Pro Automation** là một userscript mạnh mẽ được thiết kế để tự động hóa các tác vụ lặp đi lặp lại trên nền tảng Locketbinhake. Tạm biệt các thao tác thủ công nhàm chán và chào đón hiệu suất tối đa chỉ với một cú nhấp chuột.
+## 🚀 Trải nghiệm sức mạnh tự động hóa trong 15 giây
 
-![Demo Placeholder](https://user-images.githubusercontent.com/26339546/171921203-93822089-2d41-4720-9c16-ab5b3c3f309d.gif)
-> *Gợi ý: Bạn có thể thay thế ảnh trên bằng một ảnh GIF demo hoạt động của script.*
+Xem Locket Pro biến các tác vụ thủ công phức tạp thành một cú nhấp chuột đơn giản.
 
-## ✨ Tại Sao Bạn Sẽ Yêu Thích Locket Pro?
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/.github/demo.gif?raw=true" alt="Locket Pro Automation Demo" width="80%">
+</p>
 
--   🚀 **Tự Động Hóa Tức Thì:** Kích hoạt toàn bộ quy trình chỉ bằng một nút bấm. Tiết kiệm thời gian, tập trung vào những việc quan trọng hơn.
--   🎨 **Tích Hợp Mượt Mà:** Bảng điều khiển trực quan tự động được thêm vào giao diện gốc của Locketbinhake, mang lại trải nghiệm liền mạch.
--   🛡️ **An Toàn & Bảo Mật:** Hoạt động hoàn toàn trên trình duyệt của bạn thông qua Tampermonkey. Không yêu cầu thông tin đăng nhập, không truy cập tài khoản, đảm bảo an toàn tuyệt đối.
--   💻 **Đa Nền Tảng:** Tương thích hoàn hảo trên các trình duyệt máy tính (Chrome, Firefox, Edge) và di động (Kiwi Browser).
+> **Locket Pro Automation** không phải là một công cụ thông thường. Đây là một userscript được thiết kế tỉ mỉ để trở thành trợ lý đắc lực của bạn, tích hợp một bảng điều khiển thông minh và thực thi mọi tác vụ lặp đi lặp lại một cách hoàn hảo.
 
-## 🚀 Bắt Đầu Chỉ Với 3 Bước
+---
 
-Quy trình cài đặt cực kỳ đơn giản và nhanh chóng.
+## ✨ Bộ tính năng VƯỢT TRỘI
 
-### 1. Nền Tảng Userscript
-Đầu tiên, bạn cần cài đặt **Tampermonkey** – trình quản lý userscript phổ biến nhất.
+| Icon | Tính Năng | Mô Tả Chi Tiết |
+| :---: | :--- | :--- |
+| ⚡️ | **Tự Động Hóa Tức Thì** | Kích hoạt toàn bộ chuỗi tác vụ phức tạp chỉ bằng một nút bấm. Tiết kiệm hàng giờ lao động thủ công và loại bỏ sai sót. |
+| 🧠 | **Tích Hợp Thông Minh** | Bảng điều khiển (Control Panel) được thiết kế để hòa nhập liền mạch vào giao diện gốc, tạo cảm giác như một tính năng có sẵn. |
+| 🛡️ | **Bảo Mật Tối Đa** | Hoạt động 100% phía client thông qua Tampermonkey. **Không bao giờ** yêu cầu hay truy cập vào tài khoản của bạn. An toàn là ưu tiên số một. |
+| 🌐 | **Tương Thích Đa Nền Tảng** | Hoạt động ổn định trên các trình duyệt máy tính (Chrome, Firefox, Edge) và di động (Kiwi Browser), mang lại trải nghiệm nhất quán mọi lúc mọi nơi. |
 
-| Trình Duyệt | Nền Tảng | Liên Kết Tải |
-| :--- | :--- | :--- |
-| **Chrome, Edge, v.v.** | PC / Laptop | [Tampermonkey (Official)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| **Kiwi Browser** | Mobile | [Tampermonkey (Legacy)](https://chromewebstore.google.com/detail/tampermonkey-legacy/lcmhijbkigalmkeommnijlpobloojgfn) |
+---
 
-### 2. Cài Đặt Locket Pro
-Nhấp vào nút bên dưới. Tampermonkey sẽ tự động mở một tab mới để bạn xác nhận cài đặt.
+## 🛠️ Kích Hoạt Trong 3 Bước Đơn Giản
+
+Chỉ mất chưa đầy một phút để thiết lập và vận hành.
+
+### **Bước 1: Cài Đặt Nền Tảng Tampermonkey**
+Đây là trình quản lý userscript, là yêu cầu bắt buộc để Locket Pro hoạt động.
+
+-   **Trên PC/Laptop** (Chrome, Edge, Firefox): [Tải Tampermonkey (Bản chính thức)](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+-   **Trên Mobile** (Kiwi Browser, Yandex): [Tải Tampermonkey (Bản Legacy)](https://chromewebstore.google.com/detail/tampermonkey-legacy/lcmhijbkigalmkeommnijlpobfkfo)
+
+### **Bước 2: Triển Khai Locket Pro Script**
+Nhấp vào nút bên dưới. Tampermonkey sẽ tự động mở tab cài đặt để bạn xác nhận.
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/Pinnnndz/locket-autocelebrity-v4/main/tampermonkey.user.js" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/CÀI_ĐẶT_LOCKET_PRO-BẮT_ĐẦU_NGAY-blueviolet?style=for-the-badge&logo=download&logoColor=white" alt="Install Script">
+    <img src="https://img.shields.io/badge/TRIỂN_KHAI_LOCKET_PRO-BẮT_ĐẦU_NGAY-43B581?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xOC45IDUuM2wtMy40LTMuM2MtLjQtLjQtMS0uNC0xLjQgMGwtOS4xIDkuMWMtLjIgLjItLjMgLjUtLjMgLjh2NC4xbDIuOC44LjgtMi44aDQuMWMuMyAwIC42LS4xLjgtLjNsOS4xLTkuMWMuNC0uNC40LTEgMC0xLjR6bS0xMS43IDguNmgtMi4yTDEyIDYuOGw3LjIgNy4xSDExLjJ6bS0uMi0xLjdsMi41IDIuNS0xLjUgMS41aC01bC0xLjUtMS41aDV6bTE1LTEuMWwtMy41IDMuNWMtLjQuNC0xIC40LTEuNCAwbC0zLjUtMy41Yy0uNC0uNC0uNC0xIDAtMS40bDMuNS0zLjVjLjQtLjQuMS0uNC40IDBsMy41IDMuNWMuNC40LjQgMSAwIDEuNHoiLz48L3N2Zz4=&logoColor=white" alt="Install Script">
   </a>
 </p>
 
-> Trong tab mới, chỉ cần nhấn nút **`Install`** là xong!
+> 💡 **Mẹo nhỏ:** Tại tab mới, chỉ cần nhấn nút **`Install`** (Cài đặt) là hoàn tất.
 
-### 3. Kích Hoạt
+### **Bước 3: Khởi Động & Vận Hành**
 1.  Truy cập trang [Locketbinhake](https://locket.binhake.dev/).
 2.  Bảng điều khiển **Locket Pro** sẽ tự động xuất hiện ở góc dưới bên phải.
-3.  Nhấn nút **"Bắt đầu Auto Celeb"** và để script thực hiện công việc.
+3.  Nhấn nút **"Bắt đầu Auto Celeb"** và chứng kiến phép màu xảy ra.
 
-## 💡 Câu Hỏi Thường Gặp (FAQ)
+---
+
+## 🚨 Chẩn Đoán & Xử Lý Sự Cố (FAQ)
 
 <details>
-  <summary><strong>❓ Bảng điều khiển không hiển thị sau khi cài đặt?</strong></summary>
+  <summary><strong>❓ Lỗi: Bảng điều khiển không hiển thị sau khi cài đặt.</strong></summary>
+
+  **Chẩn đoán:** 99% trường hợp là do Tampermonkey chưa được kích hoạt hoặc chưa được cấp quyền đầy đủ.
   
-  **Nguyên nhân:** Thường là do Tampermonkey chưa được cấp đủ quyền hoặc chưa được kích hoạt.
-  
-  **Cách khắc phục:**
-  1.  Vào trang quản lý tiện ích của trình duyệt (`chrome://extensions`).
+  **Giải pháp:**
+  1.  Truy cập trang quản lý tiện ích của trình duyệt (ví dụ: `chrome://extensions`).
   2.  Tìm **Tampermonkey** và đảm bảo tiện ích đã được **BẬT**.
-  3.  Kiểm tra và chắc chắn rằng script **Locket Pro Automation** cũng đã được bật trong bảng điều khiển của Tampermonkey.
+  3.  Trong bảng điều khiển của Tampermonkey, hãy chắc chắn script **Locket Pro Automation** cũng đang ở trạng thái bật.
   4.  Tải lại (F5) trang Locketbinhake.
 </details>
 
 <details>
-  <summary><strong>❓ Gặp lỗi Captcha hoặc treo khi dùng VPS/IP nước ngoài?</strong></summary>
+  <summary><strong>❓ Lỗi: Website bị treo hoặc dính Captcha khi dùng VPS/IP nước ngoài.</strong></summary>
 
-  **Nguyên nhân:** Website có thể áp dụng các biện pháp bảo mật dựa trên vị trí địa lý (Geo-blocking).
+  **Chẩn đoán:** Website có thể đang áp dụng cơ chế chặn IP (Geo-blocking) để hạn chế truy cập từ bên ngoài Việt Nam.
 
-  **Cách khắc phục:**
-  - Sử dụng một dịch vụ VPN và chọn máy chủ tại **Việt Nam**.
-  - **Gợi ý:** [Urban VPN Proxy](https://chromewebstore.google.com/detail/urban-vpn-proxy/eppiocemhmnlbhjplcgkofciiegomcon?hl=vi) là một lựa chọn miễn phí và hiệu quả.
-  - Sau khi kết nối VPN, tải lại trang web.
+  **Giải pháp:**
+  -   Sử dụng một tiện ích VPN và chuyển vùng (location) về **Việt Nam**.
+  -   **VPN gợi ý:** [Urban VPN Proxy](https://chromewebstore.google.com/detail/urban-vpn-proxy/eppiocemhmnlbhjplcgkofciiegomcon?hl=vi) (miễn phí và hiệu quả).
+  -   Sau khi kích hoạt VPN, hãy tải lại trang web.
 </details>
 
-## 🤝 Đóng Góp & Hỗ Trợ
+---
 
-Dự án này được xây dựng và phát triển dựa trên sự đóng góp của cộng đồng.
+## 💖 Tham Gia Cộng Đồng & Đóng Góp
 
--   **Báo Lỗi / Đề Xuất Tính Năng:** Cách tốt nhất để báo lỗi hoặc đề xuất ý tưởng là tạo một **[Issue](https://github.com/Pinnnndz/locket-autocelebrity-v4/issues)** trên GitHub.
--   **Hỗ Trợ Nhanh:** Nếu bạn cần hỗ trợ trực tiếp, đừng ngần ngại liên hệ qua Facebook.
+Sự phát triển của Locket Pro phụ thuộc vào bạn! Mọi ý tưởng, báo cáo lỗi và đóng góp đều được trân trọng.
 
-<p align="center">
-  <a href="https://github.com/Pinnnndz/locket-autocelebrity-v4/issues">
-    <img src="https://img.shields.io/badge/Báo_Lỗi-Tạo_Issue_trên_GitHub-critical?style=for-the-badge&logo=github&logoColor=white" alt="Báo Lỗi" />
-  </a>
-  &nbsp;
-  <a href="https://www.facebook.com/hphuoc.2007">
-    <img src="https://img.shields.io/badge/Cộng_đồng-Chat_trên_Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Hỗ Trợ Facebook" />
-  </a>
-</p>
-
-## 📝 Giấy Phép
-
-Dự án được phát hành theo **Giấy phép MIT**. Xem chi tiết tại file [LICENSE](LICENSE).
+-   **Báo lỗi hoặc đề xuất ý tưởng mới?** → Tạo một **[Issue trên GitHub](https://github.com/Pinnnndz/locket-autocelebrity-v4/issues)**. Đây là cách hiệu quả nhất để theo dõi và xử lý.
+-   **Cần hỗ trợ trực tiếp?** → Liên hệ qua **[Facebook](https://www.facebook.com/hphuoc.2007)**.
 
 ---
+
+## 📝 Giấy Phép (License)
+
+Dự án này được phát hành theo **Giấy phép MIT**. Xem chi tiết tại tệp [LICENSE](LICENSE).
+
 <p align="center">
-  Made with ❤️ by Pinnnndz
+  ---
+  <br>
+  <em>Được tạo ra với ❤️ bởi <strong>Pinnnndz</strong></em>
 </p>
