@@ -111,7 +111,7 @@ Nhấn nút bên dưới. Tampermonkey sẽ tự động tiếp quản và yêu 
 
 Locket Pro được xây dựng bởi cộng đồng, dành cho cộng đồng.
 
--   **Phát hiện lỗi? Có ý tưởng đột phá?** → Mở một **[Issue trên GitHub](https://github.com/Pinnnndz/locket-autocelebrity-v4/issues)**. Đây là kênh hiệu quả nhất để chúng tôi theo dõi.
+-   **Phát hiện lỗi? Có ý tưởng đột phá?** → Mở một **[Issue trên GitHub](https://github.com/Pinnnndz/locket-autocelebrity-v4/issues)** → **New issue** . **Đây là kênh hiệu quả nhất để chúng tôi theo dõi các ý kiến từ các bạn**.
 -   **Cần hỗ trợ khẩn cấp?** → Kết nối trực tiếp qua **[Facebook](https://www.facebook.com/hphuoc.2007)**.
 
 <p align="center">
